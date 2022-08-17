@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Kalkulator BMI</string>
+    <string name="logo">Twój kalkulator BMI</string>
+    <string name="loadingText">Ładowanie...</string>
+    <string name="hello_text">Witaj w aplikacji</string>
+    <string name="hello_desc">Wprowadź wymagane dane i poznaj swoje BMI</string>
+    <string name="height_hint">Podaj swój wzrost (cm)</string>
+    <string name="weight_hint">Podaj masę ciała (kg)</string>
+    <string name="button_calculate_text">Oblicz wskaźnik BMI</string>
+    <string name="toast_alert">Proszę podać wartości w polach</string>
+    <string name="age_hint">Podaj swój wiek</string>
+    <string name="RadioMaleText">Mężczyzna</string>
+    <string name="RadioFemaleText">Kobieta</string>
+    <string name="goBackButton">Oblicz ponownie</string>
+    <string name="result_textBMI">Twoje BMI wynosi...</string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BMI Calculator</string>
+    <string name="logo">Your BMI calculator</string>
+    <string name="loadingText">Loading...</string>
+    <string name="hello_text">Hello there</string>
+    <string name="hello_desc">Enter the required data and get to know your BMI</string>
+    <string name="height_hint">Enter your height (cm)</string>
+    <string name="weight_hint">Enter your body weight (kg)</string>
+    <string name="button_calculate_text">Calculate your BMI index</string>
+    <string name="toast_alert">Please enter values in the fields</string>
+    <string name="age_hint">Enter your age</string>
+    <string name="RadioMaleText">Male</string>
+    <string name="RadioFemaleText">Female</string>
+    <string name="goBackButton">Calculate again</string>
+    <string name="result_textBMI">Your BMI index is...</string>
+</resources>
