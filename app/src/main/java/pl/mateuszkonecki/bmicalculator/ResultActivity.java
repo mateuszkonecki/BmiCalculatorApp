@@ -7,6 +7,7 @@ import androidx.core.content.ContextCompat;
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.opengl.Visibility;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -15,13 +16,17 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.google.android.material.divider.MaterialDivider;
+
 import java.text.DecimalFormat;
 
 public class ResultActivity extends AppCompatActivity {
 
     private String height, weight, age, gender;
-    private TextView userIndex, shortInfo, descInfo;
+    private TextView userIndex, shortInfo, descInfo, resultTV;
     private Button goBackButton;
+    private LinearLayout linearLayout;
+    private MaterialDivider materialDivider;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +43,9 @@ public class ResultActivity extends AppCompatActivity {
         shortInfo = findViewById(R.id.shortInfo);
         descInfo = findViewById(R.id.info_description);
         goBackButton = findViewById(R.id.goBackButton);
+        linearLayout = findViewById(R.id.resultLinearLayout);
+        materialDivider = findViewById(R.id.materialDivider);
+        resultTV = findViewById(R.id.textView3);
 
         double heightDouble = Double.parseDouble(height);
         double weightDouble = Double.parseDouble(weight);
@@ -49,7 +57,17 @@ public class ResultActivity extends AppCompatActivity {
         userIndex.setText(decimalFormat.format(userBmiIndex));
 
         if(gender.equals(getResources().getString(R.string.RadioMaleText))) {
-            if(ageInt <= 24) {
+            if(ageInt < 18) {
+                descInfo.setText(R.string.age_alert_toast);
+                descInfo.setTextColor(Color.rgb(215, 61, 61));
+                descInfo.setTextSize(25);
+                linearLayout.setVisibility(View.GONE);
+                userIndex.setVisibility(View.GONE);
+                materialDivider.setVisibility(View.GONE);
+                resultTV.setVisibility(View.GONE);
+                goBackButton.setVisibility(View.GONE);
+            }
+            if(ageInt <= 24 && ageInt >= 18) {
                 if(userBmiIndex < 20.0) {
                     shortInfo.setText(getResources().getString(R.string.underweight));
                     descInfo.setText(getResources().getString(R.string.underweight_desc));
@@ -189,7 +207,16 @@ public class ResultActivity extends AppCompatActivity {
         }
 
         if(gender.equals(getResources().getString(R.string.RadioFemaleText))) {
-            if(ageInt <= 24) {
+            if(ageInt < 18) {
+                descInfo.setText(R.string.age_alert_toast);
+                descInfo.setTextColor(Color.rgb(215, 61, 61));
+                linearLayout.setVisibility(View.GONE);
+                userIndex.setVisibility(View.GONE);
+                materialDivider.setVisibility(View.GONE);
+                resultTV.setVisibility(View.GONE);
+                goBackButton.setVisibility(View.GONE);
+            }
+            if(ageInt <= 24 && ageInt >= 18) {
                 if(userBmiIndex < 19.0) {
                     shortInfo.setText(getResources().getString(R.string.underweight));
                     descInfo.setText(getResources().getString(R.string.underweight_desc));

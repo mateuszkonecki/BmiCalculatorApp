@@ -64,6 +64,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/heightET"
             android:layout_width="match_parent"
+            android:maxLength="3"
             android:layout_height="wrap_content"
             android:hint="@string/height_hint"
             android:inputType="numberDecimal" />
@@ -84,6 +85,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/weightET"
             android:layout_width="match_parent"
+            android:maxLength="3"
             android:layout_height="wrap_content"
             android:hint="@string/weight_hint"
             android:inputType="numberDecimal" />
@@ -105,6 +107,7 @@
             android:id="@+id/ageET"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:maxLength="2"
             android:hint="@string/age_hint"
             android:inputType="numberDecimal"
             tools:layout_editor_absoluteX="21dp"

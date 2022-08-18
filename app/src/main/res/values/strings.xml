@@ -13,7 +13,7 @@
     <string name="RadioFemaleText">Kobieta</string>
     <string name="goBackButton">Oblicz ponownie</string>
     <string name="result_textBMI">Twoje BMI wynosi...</string>
-    <string name="age_alert_toast">Wiek nie może być mniejszy niż 18 lat i nie większy niż 120 lat</string>
+    <string name="age_alert_toast">Wiek nie może być mniejszy niż 18 lat! \n Cofnij się i wprowadź prawidłowe informacje!</string>
 
     <string name="underweight">Niedowaga</string>
     <string name="normal_weight">Waga prawidłowa</string>
