@@ -25,7 +25,7 @@ public class ResultActivity extends AppCompatActivity {
     private String height, weight, age, gender;
     private TextView userIndex, shortInfo, descInfo, resultTV;
     private Button goBackButton;
-    private LinearLayout linearLayout;
+    private LinearLayout linearLayout, linearLayoutDesc;
     private MaterialDivider materialDivider;
 
     @Override
@@ -44,6 +44,7 @@ public class ResultActivity extends AppCompatActivity {
         descInfo = findViewById(R.id.info_description);
         goBackButton = findViewById(R.id.goBackButton);
         linearLayout = findViewById(R.id.resultLinearLayout);
+        linearLayoutDesc = findViewById(R.id.linearLayout);
         materialDivider = findViewById(R.id.materialDivider);
         resultTV = findViewById(R.id.textView3);
 
@@ -61,6 +62,7 @@ public class ResultActivity extends AppCompatActivity {
                 descInfo.setText(R.string.age_alert_toast);
                 descInfo.setTextColor(Color.rgb(215, 61, 61));
                 linearLayout.setVisibility(View.GONE);
+                linearLayoutDesc.setBackgroundColor(Color.rgb(176, 190, 197));
                 userIndex.setVisibility(View.GONE);
                 materialDivider.setVisibility(View.GONE);
                 resultTV.setVisibility(View.GONE);
@@ -211,6 +213,7 @@ public class ResultActivity extends AppCompatActivity {
                 descInfo.setTextColor(Color.rgb(215, 61, 61));
                 linearLayout.setVisibility(View.GONE);
                 userIndex.setVisibility(View.GONE);
+                linearLayoutDesc.setBackgroundColor(Color.rgb(176, 190, 197));
                 materialDivider.setVisibility(View.GONE);
                 resultTV.setVisibility(View.GONE);
                 goBackButton.setVisibility(View.GONE);

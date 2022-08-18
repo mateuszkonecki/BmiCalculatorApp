@@ -21,7 +21,7 @@
     <string name="adiposity">Otyłość</string>
     <string name="severe_adiposity">Skrajna otyłość</string>
 
-    <string name="underweight_desc">Ważysz za mało! \n Niedowaga może osłabiać Twój organizm, dlatego porozmawiaj z lekarzem i spróbuj ustalić
+    <string name="underweight_desc">Ważysz za mało! \n Niedowaga może osłabiać Twój organizm, dlatego porozmawiaj z lekarzem i spróbuj ustalić,
     jak osiągnąć prawidłową wagę.</string>
     <string name="normal_weight_desc">Możesz być naprawdę zadowolony, jeśli Twoja waga mieści się w tym przedziale indeksu BMI. Jak dotąd zrobiłeś wiele dobrego, jeśli chodzi
         o zdrowie i prawidłowe odżywianie. Gratulacje!</string>
