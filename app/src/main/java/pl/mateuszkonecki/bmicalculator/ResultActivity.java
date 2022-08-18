@@ -60,7 +60,6 @@ public class ResultActivity extends AppCompatActivity {
             if(ageInt < 18) {
                 descInfo.setText(R.string.age_alert_toast);
                 descInfo.setTextColor(Color.rgb(215, 61, 61));
-                descInfo.setTextSize(25);
                 linearLayout.setVisibility(View.GONE);
                 userIndex.setVisibility(View.GONE);
                 materialDivider.setVisibility(View.GONE);
