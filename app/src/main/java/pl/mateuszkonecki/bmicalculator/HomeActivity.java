@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -41,8 +43,12 @@ public class HomeActivity extends AppCompatActivity {
                 String weight = weightET.getText().toString();
                 String age = ageET.getText().toString();
 
+                int ageInt = Integer.parseInt(age);
+
                 if(height.isEmpty() || weight.isEmpty() || age.isEmpty()) {
                     Toast.makeText(HomeActivity.this, getResources().getString(R.string.toast_alert), Toast.LENGTH_LONG).show();
+                } else if(ageInt < 18 || ageInt > 120) {
+                    Toast.makeText(HomeActivity.this, getResources().getString(R.string.age_alert_toast), Toast.LENGTH_LONG).show();
                 } else {
                     Intent intent = new Intent(HomeActivity.this, ResultActivity.class);
 

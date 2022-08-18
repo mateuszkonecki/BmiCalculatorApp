@@ -13,4 +13,24 @@
     <string name="RadioFemaleText">Kobieta</string>
     <string name="goBackButton">Oblicz ponownie</string>
     <string name="result_textBMI">Twoje BMI wynosi...</string>
+    <string name="age_alert_toast">Wiek nie może być mniejszy niż 18 lat i nie większy niż 120 lat</string>
+
+    <string name="underweight">Niedowaga</string>
+    <string name="normal_weight">Waga prawidłowa</string>
+    <string name="overweight">Nadwaga</string>
+    <string name="adiposity">Otyłość</string>
+    <string name="severe_adiposity">Skrajna otyłość</string>
+
+    <string name="underweight_desc">Ważysz za mało! \n Niedowaga może osłabiać Twój organizm, dlatego porozmawiaj z lekarzem i spróbuj ustalić
+    jak osiągnąć prawidłową wagę.</string>
+    <string name="normal_weight_desc">Możesz być naprawdę zadowolony, jeśli Twoja waga mieści się w tym przedziale indeksu BMI. Jak dotąd zrobiłeś wiele dobrego, jeśli chodzi
+        o zdrowie i prawidłowe odżywianie. Gratulacje!</string>
+    <string name="normal_weight_desc_woman">Możesz być naprawdę zadowolona, jeśli Twoja waga mieści się w tym przedziale indeksu BMI. Jak dotąd zrobiłaś wiele dobrego, jeśli chodzi
+        o zdrowie i prawidłowe odżywianie. Gratulacje!</string>
+    <string name="overweight_desc">Masz nadwagę! \n Porozmawiaj ze swoim lekarzem, jaki sposób na utratę kilogramów
+    będzie dla Ciebie najlepszy.</string>
+    <string name="adiposity_desc">Otyłość może powodować choroby serca, udar mózgu lub cukrzycę. Porozmawiaj ze swoim lekarzem, jaki sposób na utratę kilogramów
+    będzie dla Ciebie najlepszy.</string>
+    <string name="severe_adiposity_desc">Skrajna otyłość prowadzi do różnych chorób. Przy redukcji wagi warto systematycznie korzystać z kalkulatora BMI,
+        który pozwoli kontrolować spadek wartości BMI. Pamiętaj, że wraz z utratą każdego kilograma odzyskujesz zdrowie!</string>
 </resources>

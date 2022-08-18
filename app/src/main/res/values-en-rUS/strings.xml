@@ -14,4 +14,22 @@
     <string name="RadioFemaleText">Female</string>
     <string name="goBackButton">Calculate again</string>
     <string name="result_textBMI">Your BMI index is...</string>
+    <string name="age_alert_toast">The age musn\'t be less than 18 years and musn\'t be greater than 120 years</string>
+
+    <string name="underweight">Underweight</string>
+    <string name="normal_weight">Normal weight</string>
+    <string name="overweight">Overweight</string>
+    <string name="adiposity">Adiposity</string>
+    <string name="severe_adiposity">Severe adiposity</string>
+
+    <string name="underweight_desc">You weigh too little! \n Being underweight can make your body weak, so talk to your doctor about how
+        to achieve a healthy weight.</string>
+    <string name="normal_weight_desc">You can be really happy if you are in this range of the BMI index. So far you have done a lot of good when
+        it comes to health and proper nutrition. Congratulations!</string>
+    <string name="normal_weight_desc_woman">You can be really happy if you are in this range of the BMI index. So far you have done a lot of good when
+        it comes to health and proper nutrition. Congratulations!</string>
+    <string name="overweight_desc">You are overweight! \n Talk to your doctor about the best way to lose weight.</string>
+    <string name="adiposity_desc">Adiposity can cause heart disease, stroke or diabetes. Talk to your doctor about the best way to lose weight.</string>
+    <string name="severe_adiposity_desc">Severe adiposity leads to various diseases. When reducing weight, it is worth systematically using the BMI calculator,
+        which will allow you to control the decrease in the value of BMI. Remember that every kilogram you lose, you regain your health!</string>
 </resources>
