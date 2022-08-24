@@ -50,7 +50,29 @@ public class ResultActivity extends AppCompatActivity {
         userIndex.setText(decimalFormat.format(userBmiIndex));
 
         if(gender.equals(getResources().getString(R.string.RadioMaleText))) {
-            if(ageInt <= 24 && ageInt >= 1) {
+            if(ageInt >= 1 && ageInt < 18) {
+                if(userBmiIndex < 19.0) {
+                    shortInfo.setText(getResources().getString(R.string.underweight));
+                    descInfo.setText(getResources().getString(R.string.underweight_desc));
+                }
+                if(userBmiIndex >= 19.0 && userBmiIndex < 24.0) {
+                    shortInfo.setText(getResources().getString(R.string.normal_weight));
+                    descInfo.setText(getResources().getString(R.string.normal_weight_desc));
+                }
+                if(userBmiIndex >= 24.0 && userBmiIndex < 29.0) {
+                    shortInfo.setText(getResources().getString(R.string.overweight));
+                    descInfo.setText(getResources().getString(R.string.overweight_desc));
+                }
+                if(userBmiIndex >= 29.0 && userBmiIndex <= 39.0) {
+                    shortInfo.setText(getResources().getString(R.string.adiposity));
+                    descInfo.setText(getResources().getString(R.string.adiposity_desc));
+                }
+                if(userBmiIndex > 39.0) {
+                    shortInfo.setText(getResources().getString(R.string.severe_adiposity));
+                    descInfo.setText(getResources().getString(R.string.severe_adiposity_desc));
+                }
+            }
+            if(ageInt <= 24 && ageInt >= 18) {
                 if(userBmiIndex < 20.0) {
                     shortInfo.setText(getResources().getString(R.string.underweight));
                     descInfo.setText(getResources().getString(R.string.underweight_desc));
@@ -190,7 +212,29 @@ public class ResultActivity extends AppCompatActivity {
         }
 
         if(gender.equals(getResources().getString(R.string.RadioFemaleText))) {
-            if(ageInt <= 24 && ageInt >= 1) {
+            if(ageInt >= 1 && ageInt < 18) {
+                if(userBmiIndex < 18.0) {
+                    shortInfo.setText(getResources().getString(R.string.underweight));
+                    descInfo.setText(getResources().getString(R.string.underweight_desc));
+                }
+                if(userBmiIndex >= 18.0 && userBmiIndex < 23.0) {
+                    shortInfo.setText(getResources().getString(R.string.normal_weight));
+                    descInfo.setText(getResources().getString(R.string.normal_weight_desc));
+                }
+                if(userBmiIndex >= 23.0 && userBmiIndex < 28.0) {
+                    shortInfo.setText(getResources().getString(R.string.overweight));
+                    descInfo.setText(getResources().getString(R.string.overweight_desc));
+                }
+                if(userBmiIndex >= 28.0 && userBmiIndex <= 38.0) {
+                    shortInfo.setText(getResources().getString(R.string.adiposity));
+                    descInfo.setText(getResources().getString(R.string.adiposity_desc));
+                }
+                if(userBmiIndex > 38.0) {
+                    shortInfo.setText(getResources().getString(R.string.severe_adiposity));
+                    descInfo.setText(getResources().getString(R.string.severe_adiposity_desc));
+                }
+            }
+            if(ageInt <= 24 && ageInt >= 18) {
                 if(userBmiIndex < 19.0) {
                     shortInfo.setText(getResources().getString(R.string.underweight));
                     descInfo.setText(getResources().getString(R.string.underweight_desc));
