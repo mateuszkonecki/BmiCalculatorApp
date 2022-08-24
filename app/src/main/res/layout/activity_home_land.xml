@@ -20,6 +20,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_exit_to_app_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -64,10 +74,10 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/heightET"
             android:layout_width="match_parent"
-            android:maxLength="3"
             android:layout_height="wrap_content"
             android:hint="@string/height_hint"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"
+            android:maxLength="3" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -85,10 +95,10 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/weightET"
             android:layout_width="match_parent"
-            android:maxLength="3"
             android:layout_height="wrap_content"
             android:hint="@string/weight_hint"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"
+            android:maxLength="3" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -107,9 +117,9 @@
             android:id="@+id/ageET"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:maxLength="2"
             android:hint="@string/age_hint"
             android:inputType="numberDecimal"
+            android:maxLength="2"
             tools:layout_editor_absoluteX="21dp"
             tools:layout_editor_absoluteY="465dp" />
 
@@ -154,8 +164,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="16dp"
         android:paddingVertical="15dp"
-        android:layout_marginBottom="20dp"
         android:text="@string/button_calculate_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -24,7 +24,7 @@ public class LaunchActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_launch);
+        setContentView(R.layout.activity_launch_land);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         topAnim = AnimationUtils.loadAnimation(this, R.anim.top_animation);

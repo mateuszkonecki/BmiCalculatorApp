@@ -14,7 +14,7 @@
     <string name="RadioFemaleText">Female</string>
     <string name="goBackButton">Calculate again</string>
     <string name="result_textBMI">Your BMI index is...</string>
-    <string name="age_alert_toast">The age musn\'t be less than 18 years! Go back and enter the correct information</string>
+    <string name="age_alert_toast">Incorrect age format entered!</string>
 
     <string name="underweight">Underweight</string>
     <string name="normal_weight">Normal weight</string>

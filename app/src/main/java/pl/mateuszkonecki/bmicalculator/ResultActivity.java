@@ -1,18 +1,10 @@
 package pl.mateuszkonecki.bmicalculator;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.core.content.ContextCompat;
 
-import android.content.res.Resources;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
-import android.opengl.Visibility;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -31,7 +23,7 @@ public class ResultActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_result);
+        setContentView(R.layout.activity_result_land);
 
         DecimalFormat decimalFormat = new DecimalFormat("#.##");
         height = getIntent().getStringExtra(HomeActivity.HEIGHT_KEY);
@@ -58,17 +50,7 @@ public class ResultActivity extends AppCompatActivity {
         userIndex.setText(decimalFormat.format(userBmiIndex));
 
         if(gender.equals(getResources().getString(R.string.RadioMaleText))) {
-            if(ageInt < 18) {
-                descInfo.setText(R.string.age_alert_toast);
-                descInfo.setTextColor(Color.rgb(215, 61, 61));
-                linearLayout.setVisibility(View.GONE);
-                linearLayoutDesc.setBackgroundColor(Color.rgb(176, 190, 197));
-                userIndex.setVisibility(View.GONE);
-                materialDivider.setVisibility(View.GONE);
-                resultTV.setVisibility(View.GONE);
-                goBackButton.setVisibility(View.GONE);
-            }
-            if(ageInt <= 24 && ageInt >= 18) {
+            if(ageInt <= 24 && ageInt >= 1) {
                 if(userBmiIndex < 20.0) {
                     shortInfo.setText(getResources().getString(R.string.underweight));
                     descInfo.setText(getResources().getString(R.string.underweight_desc));
@@ -208,17 +190,7 @@ public class ResultActivity extends AppCompatActivity {
         }
 
         if(gender.equals(getResources().getString(R.string.RadioFemaleText))) {
-            if(ageInt < 18) {
-                descInfo.setText(R.string.age_alert_toast);
-                descInfo.setTextColor(Color.rgb(215, 61, 61));
-                linearLayout.setVisibility(View.GONE);
-                userIndex.setVisibility(View.GONE);
-                linearLayoutDesc.setBackgroundColor(Color.rgb(176, 190, 197));
-                materialDivider.setVisibility(View.GONE);
-                resultTV.setVisibility(View.GONE);
-                goBackButton.setVisibility(View.GONE);
-            }
-            if(ageInt <= 24 && ageInt >= 18) {
+            if(ageInt <= 24 && ageInt >= 1) {
                 if(userBmiIndex < 19.0) {
                     shortInfo.setText(getResources().getString(R.string.underweight));
                     descInfo.setText(getResources().getString(R.string.underweight_desc));
