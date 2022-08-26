@@ -23,7 +23,7 @@ public class ResultActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_result_land);
+        setContentView(R.layout.activity_result);
 
         DecimalFormat decimalFormat = new DecimalFormat("#.##");
         height = getIntent().getStringExtra(HomeActivity.HEIGHT_KEY);

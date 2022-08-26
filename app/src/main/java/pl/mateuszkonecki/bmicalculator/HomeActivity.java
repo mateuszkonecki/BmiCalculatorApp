@@ -3,7 +3,7 @@ package pl.mateuszkonecki.bmicalculator;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.Color;
+import android.icu.text.Transliterator;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -13,7 +13,6 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
-import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
 public class HomeActivity extends AppCompatActivity {
@@ -33,7 +32,7 @@ public class HomeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home_land);
+        setContentView(R.layout.activity_home);
 
         calculateButton = findViewById(R.id.calculateButton);
         heightET = findViewById(R.id.heightET);
