@@ -13,7 +13,8 @@
     <string name="RadioFemaleText">Kobieta</string>
     <string name="goBackButton">Oblicz ponownie</string>
     <string name="result_textBMI">Twoje BMI wynosi...</string>
-    <string name="age_alert_toast">Nieprawidłowy format wpisanego wieku!</string>
+    <string name="age_alert_toast">Podany wiek nie jest poprawny!</string>
+    <string name="dot_alert_toast">Nieprawidłowy format wpisanej liczby!</string>
 
     <string name="underweight">Niedowaga</string>
     <string name="normal_weight">Waga prawidłowa</string>
@@ -33,4 +34,5 @@
     będzie dla Ciebie najlepszy.</string>
     <string name="severe_adiposity_desc">Skrajna otyłość prowadzi do różnych chorób. Przy redukcji wagi warto systematycznie korzystać z kalkulatora BMI,
         który pozwoli kontrolować spadek wartości BMI. Pamiętaj, że wraz z utratą każdego kilograma odzyskujesz zdrowie!</string>
+
 </resources>

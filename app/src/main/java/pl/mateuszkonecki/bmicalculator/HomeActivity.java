@@ -53,6 +53,8 @@ public class HomeActivity extends AppCompatActivity {
 
                 if(height.isEmpty() || weight.isEmpty() || age.isEmpty()) {
                     Toast.makeText(HomeActivity.this, getResources().getString(R.string.toast_alert), Toast.LENGTH_LONG).show();
+                } else if(height.contains(".") || weight.contains(".") || age.contains(".")) {
+                    Toast.makeText(HomeActivity.this, getResources().getString(R.string.dot_alert_toast), Toast.LENGTH_LONG).show();
                 } else {
                     int ageInt = Integer.parseInt(age);
                     if(ageInt < 1) {

@@ -219,7 +219,7 @@ public class ResultActivity extends AppCompatActivity {
                 }
                 if(userBmiIndex >= 18.0 && userBmiIndex < 23.0) {
                     shortInfo.setText(getResources().getString(R.string.normal_weight));
-                    descInfo.setText(getResources().getString(R.string.normal_weight_desc));
+                    descInfo.setText(getResources().getString(R.string.normal_weight_desc_woman));
                 }
                 if(userBmiIndex >= 23.0 && userBmiIndex < 28.0) {
                     shortInfo.setText(getResources().getString(R.string.overweight));
