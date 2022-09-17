@@ -25,6 +25,9 @@
     <string name="overweight">Nadwaga</string>
     <string name="adiposity">Otyłość</string>
     <string name="severe_adiposity">Skrajna otyłość</string>
+    <string name="emaciation">Wychudzenie</string>
+    <string name="starvation">Wygłodzenie</string>
+    <string name="inanition">Wyniszczenie</string>
 
     <string name="underweight_desc">Ważysz za mało! \n Niedowaga może osłabiać Twój organizm, dlatego porozmawiaj z lekarzem i spróbuj ustalić,
     jak osiągnąć prawidłową wagę.</string>
@@ -38,5 +41,8 @@
     będzie dla Ciebie najlepszy.</string>
     <string name="severe_adiposity_desc">Skrajna otyłość prowadzi do różnych chorób. Przy redukcji wagi warto systematycznie korzystać z kalkulatora BMI,
         który pozwoli kontrolować spadek wartości BMI. Pamiętaj, że wraz z utratą każdego kilograma odzyskujesz zdrowie!</string>
-
+    <string name="emaciation_desc">Poważna niedowaga może osłabiać twój układ odpornościowy, a także zwiększać ryzyko wystąpienia osteoporozy i innych groźnych chorób.</string>
+    <string name="stravation_desc">Ważysz zdecydowanie za mało! Wygłodzenie to znaczna utrata tkanki mięśniowej i tłuszczowej, stanowiąca zagrożenie dla zdrowia i życia.</string>
+    <string name="inaniation_desc">Ważysz zdecydowanie za mało! Wyniszczenie organizmu (kacheksja) charakteryzuje znaczny spadek masy ciała który związany jest
+        z zanikiem tkanki podskórnej i utratą masy mięśniowej. Koniecznie porozmawiaj z lekarzem!</string>
 </resources>

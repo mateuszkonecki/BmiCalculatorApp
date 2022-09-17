@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -16,7 +17,7 @@ public class ResultActivity extends AppCompatActivity {
 
     private String height, weight, age, gender;
     private TextView userIndex, shortInfo, descInfo, resultTV;
-    private Button goBackButton;
+    private ImageView goBackButton;
     private LinearLayout linearLayout, linearLayoutDesc;
     private MaterialDivider materialDivider;
 
@@ -51,7 +52,19 @@ public class ResultActivity extends AppCompatActivity {
 
         if(gender.equals(getResources().getString(R.string.RadioMaleText))) {
             if(ageInt >= 1 && ageInt < 18) {
-                if(userBmiIndex < 19.0) {
+                if(userBmiIndex < 14.0) {
+                    shortInfo.setText(getResources().getString(R.string.inanition));
+                    descInfo.setText(getResources().getString(R.string.inaniation_desc));
+                }
+                if(userBmiIndex >= 14.0 && userBmiIndex < 16.0) {
+                    shortInfo.setText(getResources().getString(R.string.starvation));
+                    descInfo.setText(getResources().getString(R.string.stravation_desc));
+                }
+                if(userBmiIndex >= 16.0 && userBmiIndex < 17.0) {
+                    shortInfo.setText(getResources().getString(R.string.emaciation));
+                    descInfo.setText(getResources().getString(R.string.emaciation_desc));
+                }
+                if(userBmiIndex >= 17.0 && userBmiIndex < 19.0) {
                     shortInfo.setText(getResources().getString(R.string.underweight));
                     descInfo.setText(getResources().getString(R.string.underweight_desc));
                 }
@@ -73,7 +86,19 @@ public class ResultActivity extends AppCompatActivity {
                 }
             }
             if(ageInt <= 24 && ageInt >= 18) {
-                if(userBmiIndex < 20.0) {
+                if(userBmiIndex < 15.0) {
+                    shortInfo.setText(getResources().getString(R.string.inanition));
+                    descInfo.setText(getResources().getString(R.string.inaniation_desc));
+                }
+                if(userBmiIndex >= 15.0 && userBmiIndex < 17.0) {
+                    shortInfo.setText(getResources().getString(R.string.starvation));
+                    descInfo.setText(getResources().getString(R.string.stravation_desc));
+                }
+                if(userBmiIndex >= 17.0 && userBmiIndex < 18.0) {
+                    shortInfo.setText(getResources().getString(R.string.emaciation));
+                    descInfo.setText(getResources().getString(R.string.emaciation_desc));
+                }
+                if(userBmiIndex >= 18.0 && userBmiIndex < 20.0) {
                     shortInfo.setText(getResources().getString(R.string.underweight));
                     descInfo.setText(getResources().getString(R.string.underweight_desc));
                 }
@@ -96,7 +121,19 @@ public class ResultActivity extends AppCompatActivity {
             }
 
             if(ageInt >= 25 && ageInt <=34) {
-                if(userBmiIndex < 21.0) {
+                if(userBmiIndex < 16.0) {
+                    shortInfo.setText(getResources().getString(R.string.inanition));
+                    descInfo.setText(getResources().getString(R.string.inaniation_desc));
+                }
+                if(userBmiIndex >= 16.0 && userBmiIndex < 18.0) {
+                    shortInfo.setText(getResources().getString(R.string.starvation));
+                    descInfo.setText(getResources().getString(R.string.stravation_desc));
+                }
+                if(userBmiIndex >= 18.0 && userBmiIndex < 19.0) {
+                    shortInfo.setText(getResources().getString(R.string.emaciation));
+                    descInfo.setText(getResources().getString(R.string.emaciation_desc));
+                }
+                if(userBmiIndex >= 19.0 && userBmiIndex < 21.0) {
                     shortInfo.setText(getResources().getString(R.string.underweight));
                     descInfo.setText(getResources().getString(R.string.underweight_desc));
                 }
@@ -119,7 +156,19 @@ public class ResultActivity extends AppCompatActivity {
             }
 
             if(ageInt >= 35 && ageInt <=44) {
-                if(userBmiIndex < 22.0) {
+                if(userBmiIndex < 17.0) {
+                    shortInfo.setText(getResources().getString(R.string.inanition));
+                    descInfo.setText(getResources().getString(R.string.inaniation_desc));
+                }
+                if(userBmiIndex >= 17.0 && userBmiIndex < 19.0) {
+                    shortInfo.setText(getResources().getString(R.string.starvation));
+                    descInfo.setText(getResources().getString(R.string.stravation_desc));
+                }
+                if(userBmiIndex >= 19.0 && userBmiIndex < 20.0) {
+                    shortInfo.setText(getResources().getString(R.string.emaciation));
+                    descInfo.setText(getResources().getString(R.string.emaciation_desc));
+                }
+                if(userBmiIndex >= 20.0 && userBmiIndex < 22.0) {
                     shortInfo.setText(getResources().getString(R.string.underweight));
                     descInfo.setText(getResources().getString(R.string.underweight_desc));
                 }
@@ -142,7 +191,19 @@ public class ResultActivity extends AppCompatActivity {
             }
 
             if(ageInt >= 45 && ageInt <=54) {
-                if(userBmiIndex < 23.0) {
+                if(userBmiIndex < 18.0) {
+                    shortInfo.setText(getResources().getString(R.string.inanition));
+                    descInfo.setText(getResources().getString(R.string.inaniation_desc));
+                }
+                if(userBmiIndex >= 18.0 && userBmiIndex < 20.0) {
+                    shortInfo.setText(getResources().getString(R.string.starvation));
+                    descInfo.setText(getResources().getString(R.string.stravation_desc));
+                }
+                if(userBmiIndex >= 20.0 && userBmiIndex < 21.0) {
+                    shortInfo.setText(getResources().getString(R.string.emaciation));
+                    descInfo.setText(getResources().getString(R.string.emaciation_desc));
+                }
+                if(userBmiIndex >= 21.0 && userBmiIndex < 23.0) {
                     shortInfo.setText(getResources().getString(R.string.underweight));
                     descInfo.setText(getResources().getString(R.string.underweight_desc));
                 }
@@ -165,7 +226,19 @@ public class ResultActivity extends AppCompatActivity {
             }
 
             if(ageInt >= 55 && ageInt <= 64) {
-                if(userBmiIndex < 24.0) {
+                if(userBmiIndex < 19.0) {
+                    shortInfo.setText(getResources().getString(R.string.inanition));
+                    descInfo.setText(getResources().getString(R.string.inaniation_desc));
+                }
+                if(userBmiIndex >= 19.0 && userBmiIndex < 21.0) {
+                    shortInfo.setText(getResources().getString(R.string.starvation));
+                    descInfo.setText(getResources().getString(R.string.stravation_desc));
+                }
+                if(userBmiIndex >= 21.0 && userBmiIndex < 22.0) {
+                    shortInfo.setText(getResources().getString(R.string.emaciation));
+                    descInfo.setText(getResources().getString(R.string.emaciation_desc));
+                }
+                if(userBmiIndex >= 22.0 && userBmiIndex < 24.0) {
                     shortInfo.setText(getResources().getString(R.string.underweight));
                     descInfo.setText(getResources().getString(R.string.underweight_desc));
                 }
@@ -188,7 +261,19 @@ public class ResultActivity extends AppCompatActivity {
             }
 
             if(ageInt > 65) {
-                if(userBmiIndex < 25.0) {
+                if(userBmiIndex < 20.0) {
+                    shortInfo.setText(getResources().getString(R.string.inanition));
+                    descInfo.setText(getResources().getString(R.string.inaniation_desc));
+                }
+                if(userBmiIndex >= 20.0 && userBmiIndex < 22.0) {
+                    shortInfo.setText(getResources().getString(R.string.starvation));
+                    descInfo.setText(getResources().getString(R.string.stravation_desc));
+                }
+                if(userBmiIndex >= 22.0 && userBmiIndex < 23.0) {
+                    shortInfo.setText(getResources().getString(R.string.emaciation));
+                    descInfo.setText(getResources().getString(R.string.emaciation_desc));
+                }
+                if(userBmiIndex >= 23.0 && userBmiIndex < 25.0) {
                     shortInfo.setText(getResources().getString(R.string.underweight));
                     descInfo.setText(getResources().getString(R.string.underweight_desc));
                 }
@@ -213,7 +298,19 @@ public class ResultActivity extends AppCompatActivity {
 
         if(gender.equals(getResources().getString(R.string.RadioFemaleText))) {
             if(ageInt >= 1 && ageInt < 18) {
-                if(userBmiIndex < 18.0) {
+                if(userBmiIndex < 13.0) {
+                    shortInfo.setText(getResources().getString(R.string.inanition));
+                    descInfo.setText(getResources().getString(R.string.inaniation_desc));
+                }
+                if(userBmiIndex >= 13.0 && userBmiIndex < 15.0) {
+                    shortInfo.setText(getResources().getString(R.string.starvation));
+                    descInfo.setText(getResources().getString(R.string.stravation_desc));
+                }
+                if(userBmiIndex >= 15.0 && userBmiIndex < 16.0) {
+                    shortInfo.setText(getResources().getString(R.string.emaciation));
+                    descInfo.setText(getResources().getString(R.string.emaciation_desc));
+                }
+                if(userBmiIndex >= 16.0 && userBmiIndex < 18.0) {
                     shortInfo.setText(getResources().getString(R.string.underweight));
                     descInfo.setText(getResources().getString(R.string.underweight_desc));
                 }
@@ -235,7 +332,19 @@ public class ResultActivity extends AppCompatActivity {
                 }
             }
             if(ageInt <= 24 && ageInt >= 18) {
-                if(userBmiIndex < 19.0) {
+                if(userBmiIndex < 14.0) {
+                    shortInfo.setText(getResources().getString(R.string.inanition));
+                    descInfo.setText(getResources().getString(R.string.inaniation_desc));
+                }
+                if(userBmiIndex >= 14.0 && userBmiIndex < 16.0) {
+                    shortInfo.setText(getResources().getString(R.string.starvation));
+                    descInfo.setText(getResources().getString(R.string.stravation_desc));
+                }
+                if(userBmiIndex >= 16.0 && userBmiIndex < 17.0) {
+                    shortInfo.setText(getResources().getString(R.string.emaciation));
+                    descInfo.setText(getResources().getString(R.string.emaciation_desc));
+                }
+                if(userBmiIndex >= 17.0 && userBmiIndex < 19.0) {
                     shortInfo.setText(getResources().getString(R.string.underweight));
                     descInfo.setText(getResources().getString(R.string.underweight_desc));
                 }
@@ -258,7 +367,19 @@ public class ResultActivity extends AppCompatActivity {
             }
 
             if(ageInt >= 25 && ageInt <=34) {
-                if(userBmiIndex < 20.0) {
+                if(userBmiIndex < 15.0) {
+                    shortInfo.setText(getResources().getString(R.string.inanition));
+                    descInfo.setText(getResources().getString(R.string.inaniation_desc));
+                }
+                if(userBmiIndex >= 15.0 && userBmiIndex < 17.0) {
+                    shortInfo.setText(getResources().getString(R.string.starvation));
+                    descInfo.setText(getResources().getString(R.string.stravation_desc));
+                }
+                if(userBmiIndex >= 17.0 && userBmiIndex < 18.0) {
+                    shortInfo.setText(getResources().getString(R.string.emaciation));
+                    descInfo.setText(getResources().getString(R.string.emaciation_desc));
+                }
+                if(userBmiIndex >= 18.0 && userBmiIndex < 20.0) {
                     shortInfo.setText(getResources().getString(R.string.underweight));
                     descInfo.setText(getResources().getString(R.string.underweight_desc));
                 }
@@ -281,7 +402,19 @@ public class ResultActivity extends AppCompatActivity {
             }
 
             if(ageInt >= 35 && ageInt <=44) {
-                if(userBmiIndex < 21.0) {
+                if(userBmiIndex < 16.0) {
+                    shortInfo.setText(getResources().getString(R.string.inanition));
+                    descInfo.setText(getResources().getString(R.string.inaniation_desc));
+                }
+                if(userBmiIndex >= 16.0 && userBmiIndex < 18.0) {
+                    shortInfo.setText(getResources().getString(R.string.starvation));
+                    descInfo.setText(getResources().getString(R.string.stravation_desc));
+                }
+                if(userBmiIndex >= 18.0 && userBmiIndex < 19.0) {
+                    shortInfo.setText(getResources().getString(R.string.emaciation));
+                    descInfo.setText(getResources().getString(R.string.emaciation_desc));
+                }
+                if(userBmiIndex >= 19.0 && userBmiIndex < 21.0) {
                     shortInfo.setText(getResources().getString(R.string.underweight));
                     descInfo.setText(getResources().getString(R.string.underweight_desc));
                 }
@@ -304,7 +437,19 @@ public class ResultActivity extends AppCompatActivity {
             }
 
             if(ageInt >= 45 && ageInt <=54) {
-                if(userBmiIndex < 22.0) {
+                if(userBmiIndex < 17.0) {
+                    shortInfo.setText(getResources().getString(R.string.inanition));
+                    descInfo.setText(getResources().getString(R.string.inaniation_desc));
+                }
+                if(userBmiIndex >= 17.0 && userBmiIndex < 19.0) {
+                    shortInfo.setText(getResources().getString(R.string.starvation));
+                    descInfo.setText(getResources().getString(R.string.stravation_desc));
+                }
+                if(userBmiIndex >= 19.0 && userBmiIndex < 20.0) {
+                    shortInfo.setText(getResources().getString(R.string.emaciation));
+                    descInfo.setText(getResources().getString(R.string.emaciation_desc));
+                }
+                if(userBmiIndex >= 20.0 && userBmiIndex < 22.0) {
                     shortInfo.setText(getResources().getString(R.string.underweight));
                     descInfo.setText(getResources().getString(R.string.underweight_desc));
                 }
@@ -327,7 +472,19 @@ public class ResultActivity extends AppCompatActivity {
             }
 
             if(ageInt >= 55 && ageInt <= 64) {
-                if(userBmiIndex < 23.0) {
+                if(userBmiIndex < 18.0) {
+                    shortInfo.setText(getResources().getString(R.string.inanition));
+                    descInfo.setText(getResources().getString(R.string.inaniation_desc));
+                }
+                if(userBmiIndex >= 18.0 && userBmiIndex < 20.0) {
+                    shortInfo.setText(getResources().getString(R.string.starvation));
+                    descInfo.setText(getResources().getString(R.string.stravation_desc));
+                }
+                if(userBmiIndex >= 20.0 && userBmiIndex < 21.0) {
+                    shortInfo.setText(getResources().getString(R.string.emaciation));
+                    descInfo.setText(getResources().getString(R.string.emaciation_desc));
+                }
+                if(userBmiIndex >= 21.0 && userBmiIndex < 23.0) {
                     shortInfo.setText(getResources().getString(R.string.underweight));
                     descInfo.setText(getResources().getString(R.string.underweight_desc));
                 }
@@ -350,7 +507,19 @@ public class ResultActivity extends AppCompatActivity {
             }
 
             if(ageInt > 65) {
-                if(userBmiIndex < 24.0) {
+                if(userBmiIndex < 19.0) {
+                    shortInfo.setText(getResources().getString(R.string.inanition));
+                    descInfo.setText(getResources().getString(R.string.inaniation_desc));
+                }
+                if(userBmiIndex >= 19.0 && userBmiIndex < 21.0) {
+                    shortInfo.setText(getResources().getString(R.string.starvation));
+                    descInfo.setText(getResources().getString(R.string.stravation_desc));
+                }
+                if(userBmiIndex >= 21.0 && userBmiIndex < 22.0) {
+                    shortInfo.setText(getResources().getString(R.string.emaciation));
+                    descInfo.setText(getResources().getString(R.string.emaciation_desc));
+                }
+                if(userBmiIndex >= 22.0 && userBmiIndex < 24.0) {
                     shortInfo.setText(getResources().getString(R.string.underweight));
                     descInfo.setText(getResources().getString(R.string.underweight_desc));
                 }

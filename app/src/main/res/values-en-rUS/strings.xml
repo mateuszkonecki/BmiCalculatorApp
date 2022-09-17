@@ -26,6 +26,9 @@
     <string name="overweight">Overweight</string>
     <string name="adiposity">Obesity</string>
     <string name="severe_adiposity">Extreme obesity</string>
+    <string name="emaciation">Emaciation</string>
+    <string name="starvation">Starvation</string>
+    <string name="inanition">Inanition</string>
 
     <string name="underweight_desc">You weigh too little! \n Being underweight can make your body weak, so talk to your doctor about how
         to achieve a healthy weight.</string>
@@ -37,4 +40,9 @@
     <string name="adiposity_desc">Obesity can cause heart disease, stroke or diabetes. Talk to your doctor about the best way to lose weight.</string>
     <string name="severe_adiposity_desc">Extreme obesity leads to various diseases. When reducing weight, it is worth systematically using the BMI calculator,
         which will allow you to control the decrease in the value of BMI. Remember that every kilogram you lose, you regain your health!</string>
+    <string name="emaciation_desc">Being seriously underweight can weaken your immune system and also increase your risk of osteoporosis and other serious illnesses.</string>
+    <string name="stravation_desc">You weigh far too little! Starvation is a significant loss of muscle and fat tissue, posing a threat to health and life.</string>
+    <string name="inaniation_desc">You weigh far too little! Body wasting (cachexia) is characterized by a significant decrease in body weight associated with the
+        loss of subcutaneous tissue and loss of muscle mass. Be sure to talk to your doctor!</string>
+
 </resources>
