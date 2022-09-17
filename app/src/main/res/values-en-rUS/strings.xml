@@ -16,6 +16,10 @@
     <string name="result_textBMI">Your BMI index is...</string>
     <string name="age_alert_toast">Incorrect age format entered!</string>
     <string name="dot_alert_toast">Incorrect number format entered!</string>
+    <string name="questTitle">Exit</string>
+    <string name="questMsg">Are you sure you want to quit the app?</string>
+    <string name="exitYes">Yes</string>
+    <string name="exitNo">No</string>
 
     <string name="underweight">Underweight</string>
     <string name="normal_weight">Normal weight</string>

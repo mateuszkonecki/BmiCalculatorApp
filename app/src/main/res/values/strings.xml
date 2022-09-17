@@ -15,6 +15,10 @@
     <string name="result_textBMI">Twoje BMI wynosi...</string>
     <string name="age_alert_toast">Podany wiek nie jest poprawny!</string>
     <string name="dot_alert_toast">Nieprawidłowy format wpisanej liczby!</string>
+    <string name="questTitle">Wyjście</string>
+    <string name="questMsg">Czy napewno chcesz opuścić aplikację?</string>
+    <string name="exitYes">Tak</string>
+    <string name="exitNo">Nie</string>
 
     <string name="underweight">Niedowaga</string>
     <string name="normal_weight">Waga prawidłowa</string>

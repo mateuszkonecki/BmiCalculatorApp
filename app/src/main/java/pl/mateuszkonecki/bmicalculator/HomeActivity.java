@@ -2,6 +2,8 @@ package pl.mateuszkonecki.bmicalculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.icu.text.Transliterator;
 import android.os.Bundle;
@@ -82,7 +84,24 @@ public class HomeActivity extends AppCompatActivity {
         exitView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                finish();
+                AlertDialog alertDialog = new AlertDialog.Builder(HomeActivity.this)
+                        .setIcon(android.R.drawable.ic_dialog_alert)
+                        .setTitle(getResources().getString(R.string.questTitle))
+                        .setMessage(getResources().getString(R.string.questMsg))
+                        .setPositiveButton(getResources().getString(R.string.exitYes), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                finish();
+                            }
+                        })
+
+                        .setNegativeButton(getResources().getString(R.string.exitNo), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+
+                            }
+                        })
+                        .show();
             }
         });
     }
