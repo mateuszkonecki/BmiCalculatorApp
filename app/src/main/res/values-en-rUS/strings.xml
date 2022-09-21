@@ -30,16 +30,21 @@
     <string name="starvation">Starvation</string>
     <string name="inanition">Inanition</string>
 
-    <string name="underweight_desc">You weigh too little! \n Being underweight can make your body weak, so talk to your doctor about how
-        to achieve a healthy weight.</string>
-    <string name="normal_weight_desc">You can be really happy if you are in this range of the BMI index. So far you have done a lot of good when
-        it comes to health and proper nutrition. Congratulations!</string>
-    <string name="normal_weight_desc_woman">You can be really happy if you are in this range of the BMI index. So far you have done a lot of good when
-        it comes to health and proper nutrition. Congratulations!</string>
-    <string name="overweight_desc">You are overweight! \n Talk to your doctor about the best way to lose weight.</string>
-    <string name="adiposity_desc">Obesity can cause heart disease, stroke or diabetes. Talk to your doctor about the best way to lose weight.</string>
-    <string name="severe_adiposity_desc">Extreme obesity leads to various diseases. When reducing weight, it is worth systematically using the BMI calculator,
-        which will allow you to control the decrease in the value of BMI. Remember that every kilogram you lose, you regain your health!</string>
+    <string name="underweight_desc">You weigh too little! Weight deficiency increases the risk of allergies and lowers the body\'s immunity.
+        Talk to your doctor about ways you can gain weight.</string>
+
+    <string name="normal_weight_desc">You can be really happy if you are in this range of the BMI index. Congratulations!</string>
+    <string name="normal_weight_desc_woman">You can be really happy if you are in this range of the BMI index. Congratulations!</string>
+
+    <string name="overweight_desc">You are overweight! Even being slightly overweight increases your risk of developing cancer, cardiovascular
+        disease and type 2 diabetes. Talk to your doctor about ways you can lose weight.</string>
+
+    <string name="adiposity_desc">You weigh too much! Obesity increases the risk of cardiovascular disease due to the build-up of excess fat in the
+        blood vessels, which can lead to heart attacks, strokes, etc. Don\'t underestimate this condition!</string>
+
+    <string name="severe_adiposity_desc">You weigh way too much! Think about changing your eating habits and getting treatment under
+        the supervision of an appropriate specialist. Remember that every kilogram you lose, you regain your health!</string>
+
     <string name="emaciation_desc">Being seriously underweight can weaken your immune system and also increase your risk of osteoporosis and other serious illnesses.</string>
     <string name="stravation_desc">You weigh far too little! Starvation is a significant loss of muscle and fat tissue, posing a threat to health and life.</string>
     <string name="inaniation_desc">You weigh far too little! Body wasting (cachexia) is characterized by a significant decrease in body weight associated with the

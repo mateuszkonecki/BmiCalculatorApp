@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Kalkulator BMI</string>
     <string name="logo">Twój kalkulator BMI</string>
@@ -29,18 +30,21 @@
     <string name="starvation">Wygłodzenie</string>
     <string name="inanition">Wyniszczenie</string>
 
-    <string name="underweight_desc">Ważysz za mało! \n Niedowaga może osłabiać Twój organizm, dlatego porozmawiaj z lekarzem i spróbuj ustalić,
-    jak osiągnąć prawidłową wagę.</string>
-    <string name="normal_weight_desc">Możesz być naprawdę zadowolony, jeśli Twoja waga mieści się w tym przedziale indeksu BMI. Jak dotąd zrobiłeś wiele dobrego, jeśli chodzi
-        o zdrowie i prawidłowe odżywianie. Gratulacje!</string>
-    <string name="normal_weight_desc_woman">Możesz być naprawdę zadowolona, jeśli Twoja waga mieści się w tym przedziale indeksu BMI. Jak dotąd zrobiłaś wiele dobrego, jeśli chodzi
-        o zdrowie i prawidłowe odżywianie. Gratulacje!</string>
-    <string name="overweight_desc">Masz nadwagę! \n Porozmawiaj ze swoim lekarzem, jaki sposób na utratę kilogramów
-    będzie dla Ciebie najlepszy.</string>
-    <string name="adiposity_desc">Otyłość może powodować choroby serca, udar mózgu lub cukrzycę. Porozmawiaj ze swoim lekarzem, jaki sposób na utratę kilogramów
-    będzie dla Ciebie najlepszy.</string>
-    <string name="severe_adiposity_desc">Skrajna otyłość prowadzi do różnych chorób. Przy redukcji wagi warto systematycznie korzystać z kalkulatora BMI,
-        który pozwoli kontrolować spadek wartości BMI. Pamiętaj, że wraz z utratą każdego kilograma odzyskujesz zdrowie!</string>
+    <string name="underweight_desc">Ważysz za mało! Niedobór masy ciała zwiększa ryzyko występowania alergii oraz obniża odporność organizmu.
+    Porozmawiaj z lekarzem o tym, w jaki sposób możesz zwiększyć swoją masę ciała.</string>
+
+    <string name="normal_weight_desc">Możesz być naprawdę zadowolony, jeśli Twoja waga mieści się w tym przedziale indeksu BMI. Gratulacje!</string>
+    <string name="normal_weight_desc_woman">Możesz być naprawdę zadowolona, jeśli Twoja waga mieści się w tym przedziale indeksu BMI. Gratulacje!</string>
+
+    <string name="overweight_desc">Masz nadwagę! Już niewielka nadwaga zwiększa ryzyko zachorowania na nowotwory, choroby układu
+        krążenia i cukrzycę typu 2. Porozmawiaj z lekarzem o tym, w jaki sposób możesz zmiejszyć swoją masę ciała.</string>
+
+    <string name="adiposity_desc">Ważysz za dużo! Otyłość zwiększa ryzyko chorób sercowo-naczyniowych, ze względu na odkładanie się
+    nadmiaru tłuszczu w naczyniach krwionośnych, co może prowadzić co zawału serca, udaru mózgu, itp. Nie lekceważ tego stanu!</string>
+
+    <string name="severe_adiposity_desc">Ważysz zdecydowanie za dużo! Pomyśl o zmianie nawyków żywieniowych, a także o leczeniu
+    pod okiem odpowiedniego specjalisty. Pamiętaj, że wraz z utratą nadmiarowych kilogramów odzyskujesz zdrowie!</string>
+
     <string name="emaciation_desc">Poważna niedowaga może osłabiać twój układ odpornościowy, a także zwiększać ryzyko wystąpienia osteoporozy i innych groźnych chorób.</string>
     <string name="stravation_desc">Ważysz zdecydowanie za mało! Wygłodzenie to znaczna utrata tkanki mięśniowej i tłuszczowej, stanowiąca zagrożenie dla zdrowia i życia.</string>
     <string name="inaniation_desc">Ważysz zdecydowanie za mało! Wyniszczenie organizmu (kacheksja) charakteryzuje znaczny spadek masy ciała który związany jest
