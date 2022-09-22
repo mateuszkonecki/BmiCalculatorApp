@@ -8,7 +8,8 @@
     <string name="height_hint">Enter your height (cm)</string>
     <string name="weight_hint">Enter your body weight (kg)</string>
     <string name="button_calculate_text">Calculate your BMI index</string>
-    <string name="toast_alert">Please enter values in the fields</string>
+    <string name="toast_alert">Please enter value in the field</string>
+    <string name="toast_select_alert">Please select a gender</string>
     <string name="age_hint">Enter your age</string>
     <string name="RadioMaleText">Male</string>
     <string name="RadioFemaleText">Female</string>

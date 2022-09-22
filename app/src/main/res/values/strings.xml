@@ -8,7 +8,8 @@
     <string name="height_hint">Podaj swój wzrost (cm)</string>
     <string name="weight_hint">Podaj masę ciała (kg)</string>
     <string name="button_calculate_text">Oblicz wskaźnik BMI</string>
-    <string name="toast_alert">Proszę podać wartości w polach</string>
+    <string name="toast_alert">Proszę podać wartość w polu</string>
+    <string name="toast_select_alert">Proszę wybrać płeć</string>
     <string name="age_hint">Podaj swój wiek</string>
     <string name="RadioMaleText">Mężczyzna</string>
     <string name="RadioFemaleText">Kobieta</string>

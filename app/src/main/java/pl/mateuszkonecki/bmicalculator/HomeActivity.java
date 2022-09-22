@@ -53,14 +53,22 @@ public class HomeActivity extends AppCompatActivity {
                 String weight = weightET.getText().toString();
                 String age = ageET.getText().toString();
 
-                if(height.isEmpty() || weight.isEmpty() || age.isEmpty()) {
-                    Toast.makeText(HomeActivity.this, getResources().getString(R.string.toast_alert), Toast.LENGTH_LONG).show();
-                } else if(height.contains(".") || weight.contains(".") || age.contains(".")) {
-                    Toast.makeText(HomeActivity.this, getResources().getString(R.string.dot_alert_toast), Toast.LENGTH_LONG).show();
+                if(height.isEmpty()) {
+                    heightET.setError(getResources().getString(R.string.toast_alert));
+                } else if(weight.isEmpty()) {
+                    weightET.setError(getResources().getString(R.string.toast_alert));
+                } else if(age.isEmpty()) {
+                    ageET.setError(getResources().getString(R.string.toast_alert));
+                } else if(height.contains(".")) {
+                    heightET.setError(getResources().getString(R.string.dot_alert_toast));
+                } else if(weight.contains(".")) {
+                    weightET.setError(getResources().getString(R.string.dot_alert_toast));
+                } else if(age.contains(".")) {
+                    ageET.setError(getResources().getString(R.string.dot_alert_toast));
                 } else {
                     int ageInt = Integer.parseInt(age);
                     if(ageInt < 1) {
-                        Toast.makeText(HomeActivity.this, getResources().getString(R.string.age_alert_toast), Toast.LENGTH_LONG).show();
+                        ageET.setError(getResources().getString(R.string.age_alert_toast));
                     } else {
                         Intent intent = new Intent(HomeActivity.this, ResultActivity.class);
 
@@ -68,13 +76,14 @@ public class HomeActivity extends AppCompatActivity {
                         selectedGender = findViewById(selectedRadioId);
 
                         if(selectedRadioId == -1) {
-                            Toast.makeText(HomeActivity.this, getResources().getString(R.string.toast_alert), Toast.LENGTH_LONG).show();
+                            Toast.makeText(HomeActivity.this, getResources().getString(R.string.toast_select_alert), Toast.LENGTH_SHORT).show();
                         } else {
                             intent.putExtra(HEIGHT_KEY, height);
                             intent.putExtra(WEIGHT_KEY, weight);
                             intent.putExtra(AGE_KEY, age);
                             intent.putExtra(GENDER_KEY, selectedGender.getText().toString());
                             startActivity(intent);
+                            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
                         }
                     }
                 }
